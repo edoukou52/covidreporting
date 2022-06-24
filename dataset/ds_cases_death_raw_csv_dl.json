@@ -1,5 +1,5 @@
 {
-	"name": "ds_population_tsv",
+	"name": "ds_cases_death_raw_csv_dl",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adls_covidreportingdl",
@@ -10,11 +10,13 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "population",
+				"fileName": "cases_deaths.csv",
+				"folderPath": "ecdc",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []

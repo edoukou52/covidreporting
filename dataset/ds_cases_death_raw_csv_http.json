@@ -1,20 +1,20 @@
 {
-	"name": "ds_population_tsv",
+	"name": "ds_cases_death_raw_csv_http",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_adls_covidreportingdl",
+			"referenceName": "ls_http_opendata_ecdc_europa_eu",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"folderPath": "population",
-				"fileSystem": "raw"
+				"type": "HttpServerLocation",
+				"relativeUrl": "covid19/nationalcasedeath/csv/data.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
