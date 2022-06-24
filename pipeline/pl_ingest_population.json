@@ -132,7 +132,7 @@
 							]
 						},
 						{
-							"name": "Delete1",
+							"name": "Delete from source",
 							"type": "Delete",
 							"dependsOn": [
 								{
@@ -158,6 +158,7 @@
 								"enableLogging": false,
 								"storeSettings": {
 									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
 									"enablePartitionDiscovery": false
 								}
 							}
