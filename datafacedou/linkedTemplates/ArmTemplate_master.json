@@ -7,17 +7,21 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "datafacedou"
 		},
-		"ls_ablob_covidreporting_connectionString": {
+		"ls_adls_covidreporting_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ls_ablob_covidreporting'"
+			"metadata": "Secure string for 'accountKey' of 'ls_adls_covidreporting'"
 		},
-		"ls_adls_covidreportingdl_accountKey": {
+		"ls_blob_covidreportingsa_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ls_adls_covidreportingdl'"
+			"metadata": "Secure string for 'connectionString' of 'ls_blob_covidreportingsa'"
 		},
-		"ls_adls_covidreportingdl_properties_typeProperties_url": {
+		"ls_adls_covidreporting_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://datalakeedou1.dfs.core.windows.net/"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/c89ef364-6c47-4aad-a0c9-402c048a37ed/resourceGroups/ressource/providers/Microsoft.Storage/storageAccounts/mystoragaccountedou1"
 		},
 		"containerUri": {
 			"type": "string",
@@ -46,14 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"ls_ablob_covidreporting_connectionString": {
-						"value": "[parameters('ls_ablob_covidreporting_connectionString')]"
+					"ls_adls_covidreporting_accountKey": {
+						"value": "[parameters('ls_adls_covidreporting_accountKey')]"
 					},
-					"ls_adls_covidreportingdl_accountKey": {
-						"value": "[parameters('ls_adls_covidreportingdl_accountKey')]"
+					"ls_blob_covidreportingsa_connectionString": {
+						"value": "[parameters('ls_blob_covidreportingsa_connectionString')]"
 					},
-					"ls_adls_covidreportingdl_properties_typeProperties_url": {
-						"value": "[parameters('ls_adls_covidreportingdl_properties_typeProperties_url')]"
+					"ls_adls_covidreporting_properties_typeProperties_url": {
+						"value": "[parameters('ls_adls_covidreporting_properties_typeProperties_url')]"
+					},
+					"tr_ingest_population_data_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},

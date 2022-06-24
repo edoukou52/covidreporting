@@ -5,14 +5,17 @@
 		"factoryName": {
 			"value": "datafacedou"
 		},
-		"ls_ablob_covidreporting_connectionString": {
+		"ls_adls_covidreporting_accountKey": {
 			"value": ""
 		},
-		"ls_adls_covidreportingdl_accountKey": {
+		"ls_blob_covidreportingsa_connectionString": {
 			"value": ""
 		},
-		"ls_adls_covidreportingdl_properties_typeProperties_url": {
+		"ls_adls_covidreporting_properties_typeProperties_url": {
 			"value": "https://datalakeedou1.dfs.core.windows.net/"
+		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/c89ef364-6c47-4aad-a0c9-402c048a37ed/resourceGroups/ressource/providers/Microsoft.Storage/storageAccounts/mystoragaccountedou1"
 		},
 		"containerUri": {
 			"value": ""
