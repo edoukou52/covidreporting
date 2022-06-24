@@ -19,6 +19,12 @@
 		},
 		"tr_population_properties_typeProperties_scope": {
 			"value": "/subscriptions/c89ef364-6c47-4aad-a0c9-402c048a37ed/resourceGroups/ressource/providers/Microsoft.Storage/storageAccounts/mystoragaccountedou1"
+		},
+		"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl": {
+			"value": "covid19/hospitalicuadmissionrates/csv/data.csv"
+		},
+		"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_SinkFileName": {
+			"value": "hospital_admission.csv"
 		}
 	}
 }
