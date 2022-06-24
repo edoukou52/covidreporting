@@ -152,12 +152,12 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "ds_population_tsv",
+									"referenceName": "ds_population_tsv_gz",
 									"type": "DatasetReference"
 								},
 								"enableLogging": false,
 								"storeSettings": {
-									"type": "AzureBlobFSReadSettings",
+									"type": "AzureBlobStorageReadSettings",
 									"enablePartitionDiscovery": false
 								}
 							}
