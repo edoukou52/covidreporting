@@ -1,5 +1,5 @@
 {
-	"name": "pl_ingest_cases_death_data",
+	"name": "pl_ingest_ecdc_data",
 	"properties": {
 		"activities": [
 			{
@@ -48,11 +48,11 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_cases_death_raw_csv_http",
+						"referenceName": "ds_ecdcs_raw_csv_http",
 						"type": "DatasetReference",
 						"parameters": {
 							"relativeUrl": {
-								"value": "@variables('sourceRelativeUrl')",
+								"value": "@pipeline().parameters.sourceRelativeUrl",
 								"type": "Expression"
 							}
 						}
@@ -60,11 +60,11 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_cases_death_raw_csv_dl",
+						"referenceName": "ds_ecdcs_raw_csv_dl",
 						"type": "DatasetReference",
 						"parameters": {
 							"fileName": {
-								"value": "@variables('SinkFileName')",
+								"value": "@pipeline().parameters.SinkFileName",
 								"type": "Expression"
 							}
 						}
@@ -72,13 +72,13 @@
 				]
 			}
 		],
-		"variables": {
+		"parameters": {
 			"sourceRelativeUrl": {
-				"type": "String",
+				"type": "string",
 				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
 			},
 			"SinkFileName": {
-				"type": "String",
+				"type": "string",
 				"defaultValue": "hospital_admission.csv"
 			}
 		},
