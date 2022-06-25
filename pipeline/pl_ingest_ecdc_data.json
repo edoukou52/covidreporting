@@ -78,12 +78,10 @@
 		],
 		"parameters": {
 			"sourceRelativeUrl": {
-				"type": "string",
-				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
+				"type": "string"
 			},
 			"SinkFileName": {
-				"type": "string",
-				"defaultValue": "hospital_admission.csv"
+				"type": "string"
 			},
 			"sourceBaseUrl": {
 				"type": "string"
