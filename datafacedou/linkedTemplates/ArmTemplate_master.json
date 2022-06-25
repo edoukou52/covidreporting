@@ -21,11 +21,7 @@
 		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://opendata.ecdc.europa.eu/"
-		},
-		"tr_population_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/c89ef364-6c47-4aad-a0c9-402c048a37ed/resourceGroups/ressource/providers/Microsoft.Storage/storageAccounts/mystoragaccountedou1"
+			"defaultValue": "@{linkedService().SourceBaseUrl}"
 		},
 		"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl": {
 			"type": "string",
@@ -34,6 +30,10 @@
 		"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_SinkFileName": {
 			"type": "string",
 			"defaultValue": "hospital_admission.csv"
+		},
+		"tr_population_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/c89ef364-6c47-4aad-a0c9-402c048a37ed/resourceGroups/ressource/providers/Microsoft.Storage/storageAccounts/mystoragaccountedou1"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,14 +74,14 @@
 					"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
 					},
-					"tr_population_properties_typeProperties_scope": {
-						"value": "[parameters('tr_population_properties_typeProperties_scope')]"
-					},
 					"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl": {
 						"value": "[parameters('tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_sourceRelativeUrl')]"
 					},
 					"tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_SinkFileName": {
 						"value": "[parameters('tr_ingest_hospital_admission_data_properties_pl_ingest_ecdc_data_parameters_SinkFileName')]"
+					},
+					"tr_population_properties_typeProperties_scope": {
+						"value": "[parameters('tr_population_properties_typeProperties_scope')]"
 					}
 				}
 			},
